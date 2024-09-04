@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import com.example.lvk_todo.models.Quote
 import com.google.gson.Gson
 
-object DataManager {
+object QuotesDataManager {
 
     var data = emptyArray<Quote>()
     val isDataLoaded = mutableStateOf(false)
@@ -14,9 +14,9 @@ object DataManager {
 
     val currentPageState = mutableStateOf(Constants.QuotesPages.LISTING)
 
-    fun loadAssets(context: Context, fileName: String) {
+    fun loadAssets(context: Context) {
 
-        val inputStream = context.assets.open(fileName)
+        val inputStream = context.assets.open("quotes.json")
         val size: Int = inputStream.available()
         val buffer = ByteArray(size)
         inputStream.read(buffer)

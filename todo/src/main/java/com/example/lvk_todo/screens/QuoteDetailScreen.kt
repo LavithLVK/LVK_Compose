@@ -28,7 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.lvk_todo.models.Quote
-import com.example.lvk_todo.utils.DataManager
+import com.example.lvk_todo.utils.QuotesDataManager
 
 @Preview
 @Composable
@@ -45,7 +45,7 @@ fun QuoteDetailViewPreview() {
 fun QuoteDetailScreen(quote: Quote) {
 
     BackHandler {
-        DataManager.switchPages(null)
+        QuotesDataManager.switchPages(null)
     }
 
     Box(

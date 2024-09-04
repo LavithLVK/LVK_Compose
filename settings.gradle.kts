@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "LVK_TODO"
-include(":todo")
+include(":app")
  

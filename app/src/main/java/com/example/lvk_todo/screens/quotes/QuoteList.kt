@@ -1,4 +1,4 @@
-package com.example.lvk_todo.screens
+package com.example.lvk_todo.screens.quotes
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items

@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "LVK_TODO"
 include(":app")
- 
+include(":todo")
+include(":tweets")

@@ -1,5 +1,6 @@
-package com.example.lvk_todo.ui.theme
+package com.example.todo.ui.theme
 
+import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -59,5 +60,20 @@ fun LVK_TODOTheme(
     )
 }
 
-
-
+val LVKTextFieldColors: TextFieldColors
+    @Composable
+    get() = TextFieldDefaults.colors(
+        unfocusedContainerColor = Pink80,
+        focusedContainerColor = Pink40,
+        errorContainerColor = Color.White,
+        cursorColor = Pink80,
+        unfocusedLabelColor = Pink40,
+        focusedLabelColor = Pink80,
+        unfocusedTextColor = Pink40,
+        focusedTextColor = Pink80,
+        focusedIndicatorColor = Color.Transparent,
+        unfocusedIndicatorColor = Color.Transparent,
+        errorTextColor = Color.Red,
+        errorCursorColor = Color.Red,
+        errorLabelColor = Color.Red,
+    )

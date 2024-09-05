@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.lvk_todo.screens.login.LoginScreen
+import com.example.todo.screens.login.LoginScreen
 import com.example.lvk_todo.screens.sideEffects.LaunchEffectExample
 import com.example.lvk_todo.screens.quotes.QuoteDetailScreen
 import com.example.lvk_todo.screens.quotes.QuotesListScreen
@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
 //            DisposableEffectExample()
 //            LaunchProduceStateAndDerivedOfExamples()
 
-            LoginScreen()
+            com.example.todo.screens.login.LoginScreen()
 
         }
     }
